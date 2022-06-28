@@ -3,29 +3,29 @@ package com.green.vo;
 import java.sql.Timestamp;
 
 public class PartyVO {
-	private String P_Code;
-	private String P_Name;
-	private Timestamp P_Indate;
+	private String p_Code;
+	private String p_Name;
+	private Timestamp p_Indate;
 	private String p_Tel1;
 	private String p_Tel2;
 	private String p_Tel3;
 	public String getP_Code() {
-		return P_Code;
+		return p_Code;
 	}
 	public void setP_Code(String p_Code) {
-		P_Code = p_Code;
+		this.p_Code = p_Code;
 	}
 	public String getP_Name() {
-		return P_Name;
+		return p_Name;
 	}
 	public void setP_Name(String p_Name) {
-		P_Name = p_Name;
+		this.p_Name = p_Name;
 	}
 	public Timestamp getP_Indate() {
-		return P_Indate;
+		return p_Indate;
 	}
 	public void setP_Indate(Timestamp p_Indate) {
-		P_Indate = p_Indate;
+		this.p_Indate = p_Indate;
 	}
 	public String getP_Tel1() {
 		return p_Tel1;
@@ -45,5 +45,6 @@ public class PartyVO {
 	public void setP_Tel3(String p_Tel3) {
 		this.p_Tel3 = p_Tel3;
 	}
+	
 	
 }

@@ -11,12 +11,12 @@
 </head>
 <body>
     <div class="container">
-		<jsp:include page="form/header.jsp" />
-		<jsp:include page="form/nav.jsp" />
+		<jsp:include page="/form/header.jsp" />
+		<jsp:include page="/form/nav.jsp" />
         <section>
 			<!-- 메인 컨텐츠 입력 -->
         </section>
-		<jsp:include page="form/footer.jsp" />
+		<jsp:include page="/form/footer.jsp" />
     </div>
 </body>
 </html>
