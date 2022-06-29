@@ -16,6 +16,9 @@
 		<jsp:include page="/form/nav.jsp" />
         <section>
 			<!-- 메인 컨텐츠 입력 -->
+			<h2 align="center">투표 검수 조회</h2>
+			
+			
 			<table border="1" align="center">
 				<tr>
 					<th>성명</th>
