@@ -8,7 +8,7 @@
 <meta charset="UTF-8">
 <title>테스트페이지</title>
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/voteCheck.css">
+<link rel="stylesheet" href="css/infoGrade.css">
 </head>
 <body>
     <div class="container">
@@ -16,26 +16,18 @@
 		<jsp:include page="/form/nav.jsp" />
         <section>
 			<!-- 메인 컨텐츠 입력 -->
-			<h2>투표검수조회</h2>
-			<table border="1" align="center">
+			<h2>후보자등수</h2>
+			<table>
 				<tr>
-					<th>성명</th>
-					<th>생년월일</th>
-					<th>나이</th>
-					<th>성별</th>
 					<th>후보번호</th>
-					<th>투표시간</th>
-					<th>유권자확인</th>
+					<th>성명</th>
+					<th>총투표건수</th>
 				</tr>
-				<c:forEach items="${List}" var="list">
+				<c:forEach items="${list}" var="list">
 					<tr>
-						<td>${list.v_Name}</td>
-						<td>${list.v_Jumin}</td>
-						<td>${list.age}</td>
-						<td>${list.gender}</td>
-						<td>${list.m_No}</td>
-						<td>${list.v_Time}</td>
-						<td>${list.v_Confirm}</td>
+						<td>${list.m_No }</td>
+						<td>${list.m_Name }</td>
+						<td>${list.vNo }</td>
 					</tr>
 				</c:forEach>
 			</table>

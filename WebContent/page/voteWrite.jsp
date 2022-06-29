@@ -22,20 +22,20 @@
 					<tr>
 						<th>주민번호</th>
 						<td>
-							<input type="text" id="v_Jumin"> 예 : 8906153154726
+							<input type="text" id="v_Jumin" name="v_Jumin"> 예 : 8906153154726
 						</td>
 					</tr>
 					<tr>
 						<th>성명</th>
 						<td>
-							<input type="text" id="v_Name">
+							<input type="text" id="v_Name" name="v_Name">
 						</td>
 					</tr>
 					<tr>
 						<th>투표번호</th>
 						<td>
 						<!-- 후보자 리스트 가져오기 -->
-						<select name="m_No">
+						<select name="m_No" id="m_No">
 							<c:forEach var="m" items="${member_List }">
 								<option value="${m.m_No }">${m.m_Name } </option>
 							</c:forEach>
@@ -45,20 +45,20 @@
 					<tr>
 						<th>투표시간</th>
 						<td>
-							<input type="text" id="v_Time">
+							<input type="text" id="v_Time" name="v_Time">
 						</td>
 					</tr>
 					<tr>
 						<th>투표장소</th>
 						<td>
-							<input type="text" id="v_Area">
+							<input type="text" id="v_Area" name="v_Area">
 						</td>
 					</tr>
 					<tr>
 						<th>유권자 확인</th>
 						<td>
-							<input type="radio" class="v_Confirm" name="v_Confirm" value="Y">확인
-							<input type="radio" class="v_Confirm" name="v_Confirm" value="N" checked>미확인
+							<input type="radio" class="v_Confirm" name="v_Confirm" id="v_Confirm" value="Y">확인
+							<input type="radio" class="v_Confirm" name="v_Confirm" id="v_Confirm" value="N" checked>미확인
 						</td>
 					</tr>
 					<tr>
@@ -78,9 +78,11 @@
 			var v_Jumin = document.getElementById("v_Jumin");
     		var v_Name = document.getElementById("v_Name");
     		// 후보자 리스트 받아야함
-    		//var M_No = document.getElementById("M_No");
+    		var M_No = document.getElementById("M_No");
     		var v_Time = document.getElementById("v_Time");
     		var v_Area = document.getElementById("v_Area");
+    		var v_Confirm = document.getElementById("v_Confirm");
+    		
     		
     		if(!v_Jumin.value){
     			alert("주민번호가 입력되지 않았습니다!");
@@ -92,11 +94,11 @@
     			v_Name.focus();
     			return false;
     		}
-    		/* if(!m_No.value){
+    		if(!m_No.value){
     			alert("후보번호가 선택되지 않았습니다!");
     			m_No.focus();
     			return false;
-    		} */
+    		}
     		if(!v_Time.value){
     			alert("투표시간이 입력되지 않았습니다!");
     			v_Time.focus();
@@ -107,11 +109,11 @@
     			v_Area.focus();
     			return false;
     		}
-    		/* if(!v_Confirm.value){
+    		if(!v_Confirm.value){
     			alert("유권자 확인이 선택되지 않았습니다!");
     			v_Confirm.focus();
     			return false;
-    		} */
+    		}
     		
     		//입력 값 전송
     		document.vote_form.submit(); 

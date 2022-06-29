@@ -1,6 +1,7 @@
 package com.green.board;
 
 import com.green.board.action.Action;
+import com.green.board.action.InfoGrade;
 import com.green.board.action.ViewTableAction;
 import com.green.board.action.VoteCheck;
 import com.green.board.action.VoteWriteAction;
@@ -22,9 +23,10 @@ public class ActionFactory {
 			action = new VoteCheck();
 		}else if(command.equals("vote_write_form")) {
 			action = new VoteWriteFormAction();
-		}
-		else if(command.equals("vote_write")) {
+		}else if(command.equals("vote_write")) {
 			action = new VoteWriteAction();
+		}else if(command.equals("infoGrade")) {
+			action = new InfoGrade();
 		}
 		return action;
 	}

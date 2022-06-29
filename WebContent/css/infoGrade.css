@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
 table, th, td{
+	border: 1px solid black;
 	border-collapse: collapse;
 	background-color: white;
 }
 section table {
-	width: 65%;	
+	width: 40%;	
 	margin: 0 auto;
 }
 section {
@@ -14,8 +15,9 @@ section {
 th, td {
 	padding: 0.45vh;
 	text-align: center;
+	width: 80px;
 }
 h2 {
-	margin-bottm: 2%;	
+	margin-bottom: 2%;	
 	text-align: center;
 }

@@ -7,7 +7,15 @@ public class MemberVO {
 	private String p_School;
 	private String m_Jumin;
 	private String m_City;
+	private String vNo;
 	
+	
+	public String getvNo() {
+		return vNo;
+	}
+	public void setvNo(String vNo) {
+		this.vNo = vNo;
+	}
 	public String getM_No() {
 		return m_No;
 	}

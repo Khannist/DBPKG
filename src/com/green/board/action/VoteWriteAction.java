@@ -28,7 +28,7 @@ public class VoteWriteAction implements Action {
 		dao.insertVote(vVo);
 		
 		// 전송 후 목록으로 돌아가기
-		response.sendRedirect("index.html");
+		response.sendRedirect("index.jsp");
 		
 	}
 
