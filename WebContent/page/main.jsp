@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>테스트페이지</title>
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">

@@ -65,17 +65,10 @@ public class VoteDAO {
 					V_Confirm = "확인";
 				else
 					V_Confirm = "미확인";
-
-				// Time 형식 맞추기 위한 조건문
-				String time = "";
-				System.out.println("V_Time = " + V_Time);
-				System.out.println("V_Time.trim().lenght() = " + V_Time.trim().length());
-				if(V_Time.trim().length() == 3) { // [trim() 공백 제거 함수]V_Time의 길이가 3이라면 실행되는 조건문 
-					time = "0" + V_Time.substring(0,1) + ":" + V_Time.substring(1);
-				}else {
-					time = V_Time.substring(0,2) + ":" + V_Time.substring(2);
-				}
 				
+				Date formatdt =  timeFormat.parse(V_Time);
+				System.out.println("Time = " + formatdt);
+				String time = newTimeFormat.format(formatdt);
 				// String 타입을 Date 타입으로 변환
 				Date formatJumin =  dtFormat.parse(V_Jumin);
 				String jumin = newJuminFormat.format(formatJumin);

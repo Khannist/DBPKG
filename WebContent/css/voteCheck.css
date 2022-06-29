@@ -6,16 +6,12 @@ table, th, td{
 }
 section table {
 	width: 65%;	
-	margin: 0 auto;
 }
 section {
-	padding-top: 2%;
+	padding-top: 10%;
+	padding-left: 15%;	
 }
 th, td {
 	padding: 0.45vh;
 	text-align: center;
-}
-section h2{
-	text-align: center;
-	margin-bottom: 2%;
 }
