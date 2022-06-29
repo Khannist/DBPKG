@@ -67,9 +67,13 @@ public class VoteDAO {
 				else
 					V_Confirm = "미확인";
 				
-				Date formatdt =  timeFormat.parse(V_Time);
-				System.out.println("Time = " + formatdt);
-				String time = newTimeFormat.format(formatdt);
+				
+				String time = "";
+				if(V_Time.trim().length() == 3 ) {
+					time = "0" + V_Time.substring(0, 1) + ":" + V_Time.substring(1);
+				}else { 
+					time = V_Time.substring(0, 2) + ":" + V_Time.substring(2);
+				}
 				// String 타입을 Date 타입으로 변환
 				Date formatJumin =  dtFormat.parse(V_Jumin);
 				String jumin = newJuminFormat.format(formatJumin);

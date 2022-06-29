@@ -16,7 +16,7 @@ public class VoteWriteFormAction implements Action {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String url = "vote/voteWrite.jsp";
+		String url = "/page/voteWrite.jsp";
 
 		MemberDAO Mdao = MemberDAO.getInstance();
 		
