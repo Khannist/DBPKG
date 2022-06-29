@@ -13,8 +13,8 @@ public class ActionFactory {
 	public Action getAction(String command) {
 		Action action = null;
 		
-		if(command.equals("")) {
-			
+		if(command.equals("viewTable")) { // 후보 조회 command
+			action = new ViewTableAction();
 		}else if(command.equals("voteCheck")) {
 			action = new VoteCheck();
 		}
