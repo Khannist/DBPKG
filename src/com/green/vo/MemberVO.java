@@ -5,8 +5,9 @@ public class MemberVO {
 	private String m_Name;
 	private String p_Code;
 	private String p_School;
-	private String p_Jumin;
-	private String p_City;
+	private String m_Jumin;
+	private String m_City;
+	
 	public String getM_No() {
 		return m_No;
 	}
@@ -31,18 +32,18 @@ public class MemberVO {
 	public void setP_School(String p_School) {
 		this.p_School = p_School;
 	}
-	public String getP_Jumin() {
-		return p_Jumin;
+	public String getM_Jumin() {
+		return m_Jumin;
 	}
-	public void setP_Jumin(String p_Jumin) {
-		this.p_Jumin = p_Jumin;
+	public void setM_Jumin(String m_Jumin) {
+		this.m_Jumin = m_Jumin;
 	}
-	public String getP_City() {
-		return p_City;
+	public String getM_City() {
+		return m_City;
 	}
-	public void setP_City(String p_City) {
-		this.p_City = p_City;
+	public void setM_City(String m_City) {
+		this.m_City = m_City;
 	}
-	
+
 	
 }

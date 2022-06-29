@@ -45,6 +45,6 @@ public class PartyVO {
 	public void setP_Tel3(String p_Tel3) {
 		this.p_Tel3 = p_Tel3;
 	}
-	
+
 	
 }
